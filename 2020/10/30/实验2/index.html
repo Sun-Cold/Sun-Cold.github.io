@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="Sun-Cold">
 <meta property="og:description" content="1.绘制函数图像需要用到2个库numpy和matplotlib.pyplot： 123import matplotlib.pyplot as pltimport numpy as np 2.函数np.linspace主要用来创建等差数列。用这个函数来生成自变量： 用法：linspace(start, stop, num&#x3D;50, endpoint&#x3D;True, retstep&#x3D;False, dtype">
 <meta property="og:locale">
-<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C2/%E5%AE%9E%E9%AA%8C2%5C1.png">
+<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C2/1.png">
 <meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C2/2.png">
 <meta property="article:published_time" content="2020-10-30T06:05:53.000Z">
-<meta property="article:modified_time" content="2020-10-30T07:15:57.950Z">
+<meta property="article:modified_time" content="2020-10-30T08:30:01.346Z">
 <meta property="article:author" content="Sun_Cold">
 <meta property="article:tag" content="信号与系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C2/%E5%AE%9E%E9%AA%8C2%5C1.png">
+<meta name="twitter:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C2/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Sun-Cold" type="application/atom+xml">
   
@@ -195,7 +195,7 @@
 </blockquote>
 <p>4.图像名用plt.title函数：</p>
 <blockquote>
-<p>plt**.title(‘real exponential signal’)</p>
+<p>plt.title(‘real exponential signal’)</p>
 </blockquote>
 <p>默认状态下无法用中文作为标题，据说可以用一下代码解决：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plt.rcParams[&#39;font.sans-serif&#39;] &#x3D; [&#39;SimHei&#39;]</span><br><span class="line"></span><br><span class="line">plt.rcParams[&#39;axes.unicode_minus&#39;] &#x3D; False</span><br></pre></td></tr></table></figure>
@@ -203,7 +203,7 @@
 <p>5.如果有些函数需要在特定范围内显示可以用<code>plt.xlim</code>函数，函数内2参数分别为上下限：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plt.xlim(-1.0, 3.0)</span><br><span class="line"></span><br><span class="line">plt.ylim(-1.0, 3.0)</span><br></pre></td></tr></table></figure>
 <p>6.最后用<code>plt.show()</code>显示图像</p>
-<p><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C2/%E5%AE%9E%E9%AA%8C2%5C1.png"></p>
+<p><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C2/1.png"></p>
 <p>6如果想要一次显示多个图像则用<code>plt.subplot</code>:</p>
 <p>用法：<code>plt.subplot(nrows, ncols, index, \*\*kwargs)</code></p>
 <p>index的值遵循从左到右，从上到下依次递增的规则：</p>
@@ -234,6 +234,16 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/photo/AliQR.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/photo/WeChatQR.png">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>

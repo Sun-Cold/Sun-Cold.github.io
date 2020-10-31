@@ -6,24 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sun-cold.github.io">
-  <title>Sun-Cold</title>
+  <title>实验3 | Sun-Cold</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="代码部分参考链接 1.安装函数库PyQt5是一组来自Digia的Qt5应用程序框架的Python绑定。它可以帮助我们较为方便的实现GUI。因为我最早安装了Anaconda，其中已经自带丰富的函数库，便不用额外安装PyQt5。   如果没有，则可以用以下代码安装。  pip install PyQt5-tools    2.导入模块在PyQt5设计的GUI界面中显示matplotlib绘制的图形所需">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Sun-Cold">
-<meta property="og:url" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/index.html">
+<meta property="og:title" content="实验3">
+<meta property="og:url" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/index.html">
 <meta property="og:site_name" content="Sun-Cold">
 <meta property="og:description" content="代码部分参考链接 1.安装函数库PyQt5是一组来自Digia的Qt5应用程序框架的Python绑定。它可以帮助我们较为方便的实现GUI。因为我最早安装了Anaconda，其中已经自带丰富的函数库，便不用额外安装PyQt5。   如果没有，则可以用以下代码安装。  pip install PyQt5-tools    2.导入模块在PyQt5设计的GUI界面中显示matplotlib绘制的图形所需">
 <meta property="og:locale">
-<meta property="og:image" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/GUI.png">
-<meta property="og:image" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog1.png">
-<meta property="og:image" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog2.png">
-<meta property="og:image" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog3.png">
-<meta property="article:published_time" content="2020-10-31T04:24:03.187Z">
-<meta property="article:modified_time" content="2020-10-31T04:25:41.015Z">
+<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/GUI.png">
+<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog1.png">
+<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog2.png">
+<meta property="og:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog3.png">
+<meta property="article:published_time" content="2020-10-30T04:29:40.000Z">
+<meta property="article:modified_time" content="2020-10-31T04:28:37.698Z">
 <meta property="article:author" content="Sun_Cold">
+<meta property="article:tag" content="信号与系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/GUI.png">
+<meta name="twitter:image" content="https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/GUI.png">
   
     <link rel="alternative" href="/atom.xml" title="Sun-Cold" type="application/atom+xml">
   
@@ -166,6 +167,21 @@
             <article id="post-实验3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      实验3
+    </h1>
+  
+
+        
+        <a href="/2020/10/30/%E5%AE%9E%E9%AA%8C3/" class="archive-article-date">
+  	<time datetime="2020-10-30T04:29:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-30</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26379590">参考链接</a></p>
@@ -186,9 +202,9 @@
 
 <h2 id="7-最终代码"><a href="#7-最终代码" class="headerlink" title="7.最终代码"></a>7.最终代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding:utf-8.</span></span><br><span class="line"><span class="comment">#参考文章：https://zhuanlan.zhihu.com/p/26379590</span></span><br><span class="line"><span class="comment"># 导入matplotlib模块并使用Qt5Agg</span></span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore, QtWidgets, QtGui</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> matplotlib.backends.backend_qt5agg <span class="keyword">import</span> FigureCanvasQTAgg <span class="keyword">as</span> FigureCanvas</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">matplotlib.use(<span class="string">&#x27;Qt5Agg&#x27;</span>)</span><br><span class="line"><span class="comment"># 使用 matplotlib中的FigureCanvas (在使用 Qt5 Backends中 FigureCanvas继承自QtWidgets.QWidget)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">My_Main_window</span>(<span class="params">QtWidgets.QDialog</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, parent=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="comment"># 父类初始化方法</span></span><br><span class="line">        <span class="built_in">super</span>(My_Main_window, self).__init__(parent)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 几个QWidgets</span></span><br><span class="line">        self.figure = plt.figure()</span><br><span class="line">        self.canvas = FigureCanvas(self.figure)</span><br><span class="line">        self.button_plot = QtWidgets.QPushButton(<span class="string">&quot;单位脉冲序列&quot;</span>)</span><br><span class="line">        self.button_plot1 = QtWidgets.QPushButton(<span class="string">&quot;阶跃序列&quot;</span>)</span><br><span class="line">        self.button_plot2 = QtWidgets.QPushButton(<span class="string">&quot;矩形序列&quot;</span>)</span><br><span class="line">        self.button_plot3 = QtWidgets.QPushButton(<span class="string">&quot;单位斜坡序列&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 连接事件</span></span><br><span class="line">        self.button_plot.clicked.connect(self.plot_)</span><br><span class="line">        self.button_plot1.clicked.connect(self.plot_1)</span><br><span class="line">        self.button_plot2.clicked.connect(self.plot_2)</span><br><span class="line">        self.button_plot3.clicked.connect(self.plot_3)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 设置布局</span></span><br><span class="line">        layout = QtWidgets.QVBoxLayout()</span><br><span class="line">        layout.addWidget(self.canvas)</span><br><span class="line">        layout.addWidget(self.button_plot)</span><br><span class="line">        layout.addWidget(self.button_plot1)</span><br><span class="line">        layout.addWidget(self.button_plot2)</span><br><span class="line">        layout.addWidget(self.button_plot3)</span><br><span class="line">        self.setLayout(layout)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 连接的绘制的方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">plot_</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">pulse</span>(<span class="params">t</span>):</span></span><br><span class="line">            r = np.where(t == <span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">0.0</span>)  <span class="comment"># t为0返回1，其他为0</span></span><br><span class="line">            <span class="keyword">return</span> r</span><br><span class="line">        ax = self.figure.add_axes([<span class="number">0.1</span>, <span class="number">0.1</span>, <span class="number">0.8</span>, <span class="number">0.8</span>])</span><br><span class="line">        ax.clear()  <span class="comment"># 每次绘制一个函数时清空绘图</span></span><br><span class="line">        n = np.arange(<span class="number">-4</span>, <span class="number">5</span>)</span><br><span class="line">        plt.ylim(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">        plt.stem(n, pulse(n))</span><br><span class="line">        self.canvas.draw()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">plot_1</span>(<span class="params">self</span>):</span></span><br><span class="line">        ax = self.figure.add_axes([<span class="number">0.1</span>, <span class="number">0.1</span>, <span class="number">0.8</span>, <span class="number">0.8</span>])</span><br><span class="line">        ax.clear()  <span class="comment"># 每次绘制一个函数时清空绘图</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">step</span>(<span class="params">t</span>):</span></span><br><span class="line">            r = np.where(t &gt;= <span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">0.0</span>)</span><br><span class="line">            <span class="keyword">return</span> r</span><br><span class="line">        n = np.arange(<span class="number">-4</span>, <span class="number">5</span>)</span><br><span class="line">        plt.ylim(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">        plt.stem(n, step(n))</span><br><span class="line">        self.canvas.draw()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">plot_2</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">rect</span>(<span class="params">x, c, c0</span>):</span>  <span class="comment"># 起点为c0，宽度为c的矩形波</span></span><br><span class="line">            <span class="keyword">if</span> x &gt;= (c+c0):</span><br><span class="line">                r = <span class="number">0.0</span></span><br><span class="line">            <span class="keyword">elif</span> x &lt; c0:</span><br><span class="line">                r = <span class="number">0.0</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                r = <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> r</span><br><span class="line">        ax = self.figure.add_axes([<span class="number">0.1</span>, <span class="number">0.1</span>, <span class="number">0.8</span>, <span class="number">0.8</span>])</span><br><span class="line">        ax.clear()  <span class="comment"># 每次绘制一个函数时清空绘图</span></span><br><span class="line">        n = np.arange(<span class="number">-4</span>, <span class="number">5</span>)</span><br><span class="line">        y = np.array([rect(t, <span class="number">3</span>, <span class="number">0</span>) <span class="keyword">for</span> t <span class="keyword">in</span> n])</span><br><span class="line">        plt.ylim(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">        plt.stem(n, y)</span><br><span class="line">        self.canvas.draw()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">plot_3</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">Ramp</span>(<span class="params">t</span>):</span></span><br><span class="line">            r = np.where(t &gt;=<span class="number">0</span>, t, <span class="number">0.0</span>)  <span class="comment"># t为0返回1，其他为0</span></span><br><span class="line">            <span class="keyword">return</span> r</span><br><span class="line">        ax = self.figure.add_axes([<span class="number">0.1</span>, <span class="number">0.1</span>, <span class="number">0.8</span>, <span class="number">0.8</span>])</span><br><span class="line">        ax.clear()  <span class="comment"># 每次绘制一个函数时清空绘图</span></span><br><span class="line">        n = np.arange(<span class="number">-4</span>, <span class="number">5</span>)</span><br><span class="line">        plt.ylim(<span class="number">0</span>, <span class="number">5</span>)</span><br><span class="line">        plt.stem(n, Ramp(n))</span><br><span class="line">        self.canvas.draw() </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行程序</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    app = QtWidgets.QApplication(sys.argv)</span><br><span class="line">    main_window = My_Main_window()</span><br><span class="line">    main_window.show()</span><br><span class="line">    app.exec()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/10/31/%E5%AE%9E%E9%AA%8C3/GUI.png"></p>
+<p><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C3/GUI.png"></p>
 <h1 id="个人主页部分"><a href="#个人主页部分" class="headerlink" title="个人主页部分"></a>个人主页部分</h1><p>你可以点击<a href="https://sun-cold.github.io/">我的主页</a>查看最终效果。</p>
-<h2 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h2><p>仓库名为<code>[用户名].github.io</code><br><img src="/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog1.png"></p>
+<h2 id="1-创建仓库"><a href="#1-创建仓库" class="headerlink" title="1.创建仓库"></a>1.创建仓库</h2><p>仓库名为<code>[用户名].github.io</code><br><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog1.png"></p>
 <h2 id="2-安装blog框架"><a href="#2-安装blog框架" class="headerlink" title="2.安装blog框架"></a>2.安装blog框架</h2><p>此次我选择的是Hexo框架。  </p>
 <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">参考链接</a><br>Hexo需要一下支持</p>
 <ul>
@@ -200,7 +216,7 @@
 <blockquote>
 <p>hexo init myblog #初始化<br>cd myblog<br>npm install</p>
 </blockquote>
-<p>然后就能在文件夹中看到配置好的Hexo文件<br><img src="/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog2.png"><br>执行下面命令，然后就可以进入<code>http://localhost:4000/</code>本地浏览blog</p>
+<p>然后就能在文件夹中看到配置好的Hexo文件<br><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog2.png"><br>执行下面命令，然后就可以进入<code>http://localhost:4000/</code>本地浏览blog</p>
 <blockquote>
 <p>hexo g<br>hexo server</p>
 </blockquote>
@@ -219,7 +235,7 @@
 <h3 id="Ⅱ-修改配置"><a href="#Ⅱ-修改配置" class="headerlink" title="Ⅱ.修改配置"></a>Ⅱ.修改配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt; <span class="comment">#https://github.com/Sun-Cold/Sun-Cold.github.io</span></span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
 
 <h3 id="Ⅲ-部署"><a href="#Ⅲ-部署" class="headerlink" title="Ⅲ.部署"></a>Ⅲ.部署</h3><p>执行<code>hexo clean &amp;&amp; hexo deploy</code>。<br>片刻后就能在自己的Github Pages中看到自己的blog了。</p>
-<h2 id="7-最终效果"><a href="#7-最终效果" class="headerlink" title="7.最终效果"></a>7.最终效果</h2><p><img src="/2020/10/31/%E5%AE%9E%E9%AA%8C3/blog3.png"></p>
+<h2 id="7-最终效果"><a href="#7-最终效果" class="headerlink" title="7.最终效果"></a>7.最终效果</h2><p><img src="/2020/10/30/%E5%AE%9E%E9%AA%8C3/blog3.png"></p>
 
       
 
@@ -259,6 +275,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">信号与系统</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -309,7 +336,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://sun-cold.github.io/2020/10/31/%E5%AE%9E%E9%AA%8C3/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sun-cold.github.io/2020/10/30/%E5%AE%9E%E9%AA%8C3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -323,9 +350,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/10/30/%E7%BB%98%E5%88%B6%E5%AE%9E%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          绘制实指数函数图像
+        
+      </div>
+    </a>
   
-    <a href="/2020/10/30/%E5%AE%9E%E9%AA%8C2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">实验2</div>
+  
+    <a href="/2020/10/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
